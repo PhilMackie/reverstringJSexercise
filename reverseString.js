@@ -1,17 +1,8 @@
-const reverseString = function(str){
-// splits it into a string
-const oldString = str.str('');
-
-
-
-// reverse the string and spits it out backwards due to string chaingunning
-
-
-
-
-//returns the VAR
-console.log(oldString);
-};
-
-reverseString();
+const reverseString = function(str) {
+        var newString = "";
+        for (var i = str.length - 1; i >= 0; i--) {
+            newString += str[i];
+        }
+        return newString;
+    }
 module.exports = reverseString;
